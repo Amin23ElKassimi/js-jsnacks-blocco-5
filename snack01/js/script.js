@@ -9,7 +9,18 @@
 
 
 
-const autoSalone = [
-  {marca:audi model}
-]
+const automobili = [
+  { marca : 'audi',  modello: 'q8',  alimentazione: 'benzina' },
+  { marca : 'mercedes',  modello: 'gle',  alimentazione: 'elettrico' },
+  { namarcame : 'alfa',  modello: 'stelvio',  alimentazione: 'benzina' },
+  { marca : 'lambo',  modello: 'urus',  alimentazione: 'gpl' },
+  { marca : 'bugatti',  modello: 'chiron',  alimentazione: 'diesel' },
+  { marca : 'mada',  modello: 'mada9',  alimentazione: 'metano' },
+];
+
+console.log(automobili.filter(checkBenzin)) ;
+
+function checkBenzin(alimentazione) {
+  return alimentazione.alimentazione.includes('benzina');
+}
 
