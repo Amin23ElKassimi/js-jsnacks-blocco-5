@@ -8,6 +8,8 @@
 
 
 const persone = [
+  { nome : 'audi',  cognome: 'q8',  eta: 4 },
+  { nome : 'mercedes',  cognome: 'gle',  eta: 19 },
   { nome : 'audi',  cognome: 'q8',  eta: 3 },
   { nome : 'mercedes',  cognome: 'gle',  eta: 10 },
   { nome : 'alfa',  cognome: 'stelvio',  eta: 80 },
@@ -18,7 +20,8 @@ const persone = [
 ];
 
 
-console.log(persone.filter(canDrive)) ;
+const arrayCanDrive = persone.filter(canDrive)
+console.log(arrayCanDrive)
 
 function canDrive(etaToDrive) {
   return etaToDrive.eta >= 18 && etaToDrive.eta <= 75;
