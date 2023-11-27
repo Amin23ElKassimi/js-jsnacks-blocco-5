@@ -9,6 +9,7 @@
 
 
 
+
 const automobili = [
   { marca : 'audi',  modello: 'q8',  alimentazione: 'benzina' },
   { marca : 'mercedes',  modello: 'gle',  alimentazione: 'elettrico' },
@@ -16,11 +17,50 @@ const automobili = [
   { marca : 'lambo',  modello: 'urus',  alimentazione: 'gpl' },
   { marca : 'bugatti',  modello: 'chiron',  alimentazione: 'diesel' },
   { marca : 'mada',  modello: 'mada9',  alimentazione: 'metano' },
+  { marca : 'meclaren',  modello: 'q8',  alimentazione: 'benzina' },
+  { marca : 'toyota',  modello: 'gle',  alimentazione: 'diesel' },
+  { namarcame : 'mitsubitshi',  modello: 'stelvio',  alimentazione: 'diesel' },
+  { marca : 'cargo',  modello: 'urus',  alimentazione: 'diesel' },
+  { marca : 'nissan',  modello: 'chiron',  alimentazione: 'diesel' },
+  { marca : 'honda',  modello: 'mada9',  alimentazione: 'diesel' },
 ];
 
-console.log(automobili.filter(checkBenzin)) ;
 
-function checkBenzin(alimentazione) {
-  return alimentazione.alimentazione.includes('benzina');
+// Restituiscimi gli oggetti che contengono l'alimentazione "benzina"
+function checkBenzin(car) {
+  return car.alimentazione.includes('benzina');
 }
+// Restituiscimi gli oggetti che contengono l'alimentazione "disel"
+function checkDisel(car) {
+  return car.alimentazione.includes('diesel');
+}
+
+// Dichiarazione array e mappa gli array con 
+const carsDisel = automobili.filter(checkDisel)
+
+// Dichiarazione array e mappa gli array con 
+const carsBenzin = automobili.filter(checkDisel)
+
+console.log(carsDisel);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

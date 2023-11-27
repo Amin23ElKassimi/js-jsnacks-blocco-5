@@ -4,6 +4,12 @@
 // Crea quindi un nuovo array inserendo, 
 // per ogni persona, una frase con il nome e cognome e l'indicazione se può guidare, in base all'età.
 
+// Va usato .MAP
+// 2: devi creare un nuovo array in cui per ogni oggetto che hai
+// ci sia anche la proprieta' maggiorenne: true o false in base all'eta'
+// e una proprieta' nome completo
+// che abbia sia nome che cognome
+// per ognuno di quelli che hai
 
 
 
@@ -20,10 +26,9 @@ const persone = [
 ];
 
 
-const arrayCanDrive = persone.filter(canDrive)
-console.log(arrayCanDrive)
+const newArr = 
 
-function canDrive(etaToDrive) {
-  return etaToDrive.eta >= 18 && etaToDrive.eta <= 75;
-}
+
+
+
 
