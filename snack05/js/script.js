@@ -20,7 +20,7 @@ teams.forEach( (team) => {
 
     team.punti = Math.floor(Math.random() * 10);
     team.puntimin = Math.floor(Math.random() * 10);
-  console.log(teams);
+ 
 });
 
-
+console.log(teams);
