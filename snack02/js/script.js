@@ -13,20 +13,39 @@
 
 
 
-const persone = [
-  { nome : 'audi',  cognome: 'q8',  eta: 4 },
-  { nome : 'mercedes',  cognome: 'gle',  eta: 19 },
-  { nome : 'audi',  cognome: 'q8',  eta: 3 },
-  { nome : 'mercedes',  cognome: 'gle',  eta: 10 },
-  { nome : 'alfa',  cognome: 'stelvio',  eta: 80 },
-  { nome : 'lambo',  cognome: 'urus',  eta: 25 },
-  { nome : 'bugatti',  cognome: 'chiron',  eta: 36 },
-  { nome : 'mada',  cognome: 'mada9',  eta: 75 },
-  { nome : 'mada',  cognome: 'mada9',  eta: 18 },
+
+const people = [
+  { nome : 'Gino',  cognome: 'Quadretto',  eta: 4 },
+  { nome : 'Ginetta',  cognome: 'Quandante',  eta: 19 },
+  { nome : 'Ginina',  cognome: 'Quandino',  eta: 3 },
+  { nome : 'Ginettina',  cognome: 'Quasimodo',  eta: 10 },
+  { nome : 'Gianginina',  cognome: 'Quarobbo',  eta: 80 },
+  { nome : 'Giunotti',  cognome: 'Qualinquo',  eta: 25 },
+  { nome : 'Gianbruna',  cognome: 'Quoretto',  eta: 36 },
+  { nome : 'Gianluigi',  cognome: 'Qatar',  eta: 75 },
+  { nome : 'Giorgio',  cognome: 'Quilando',  eta: 66 },
+  { nome : 'Giovanna',  cognome: 'Quilando',  eta: 33 },
+  { nome : 'Gioletta',  cognome: 'Quilando',  eta: 28 },
 ];
 
+const newPeopleArray = people.map((singlePerson) =>{
+  singlePerson.nomeCompleto = singlePerson.nome + ' ' + singlePerson.cognome;
+  singlePerson.maggiorenne = singlePerson.eta >= 18;
+  singlePerson.newProprety = 'skdekdekedluigi ';
+  return singlePerson;
+});
 
-const newArr = 
+// console.log(newPeopleArray);
+
+const adults = newPeopleArray.filter((person) =>{
+  if (person.maggiorenne === true){
+      return true;
+  }}
+
+);
+
+console.log(adults);
+
 
 
 

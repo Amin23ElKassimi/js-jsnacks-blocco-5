@@ -39,9 +39,10 @@ function checkDisel(car) {
 const carsDisel = automobili.filter(checkDisel)
 
 // Dichiarazione array e mappa gli array con 
-const carsBenzin = automobili.filter(checkDisel)
+const carsBenzin = automobili.filter(checkBenzin)
 
 console.log(carsDisel);
+console.log(carsBenzin);
 
 
 
