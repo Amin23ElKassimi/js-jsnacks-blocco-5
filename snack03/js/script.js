@@ -15,10 +15,13 @@ const tabs ={
 // Il software deve guardare se c'è un social aperto ed eliminarlo dalle tab.
 // Nel caso la tab fosse attiva, deve attivare la successiva.
 
+const socials =  ["Facebook", "instagram", "Twitter", ];
 
-tabs.tab.forEach((element,) => {
 
-    console.log(element)
+tabs.tab.forEach((element,index) => {
+    if (tabs.tab.includes(socials[index])) {
+        console.log('trovato social', element)
+    }
 });
 
 
