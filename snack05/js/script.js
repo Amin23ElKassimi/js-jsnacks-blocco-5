@@ -16,12 +16,11 @@ const teams = [
   ];
 
 
-teams.forEach( (punti,puntimin) => {
+teams.forEach( (team) => {
 
-  teams.punti = Math.floor(Math.random() * 10);
-  teams.puntimin = Math.floor(Math.random() * 10);
+    team.punti = Math.floor(Math.random() * 10);
+    team.puntimin = Math.floor(Math.random() * 10);
   console.log(teams);
-
 });
 
 
